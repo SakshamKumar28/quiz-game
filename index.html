@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizWhiz</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-orange-70">
+    <nav class="flex justify-between items-center h-10  px-3 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]">
+        <div class="logo font-bold text-xl">
+            <h4>QuizWhiz</h4>
+        </div>
+        <ul class="nav-links flex gap-4">
+            <li class="hover:underline hover:decoration-orange-400"><a href="/">Home</a></li>
+            <li class="hover:underline hover:decoration-orange-400"><a href="./components/instruction.html">Quiz</a></li>
+            <li class="about hover:underline hover:decoration-orange-400" ><a href="#about">About</a></li>
+            <li><button class=" start bg-orange-500 px-2 rounded-lg cursor-pointer text-white hover:bg-orange-400" ><a href="./components/test.html">Take Quiz</a></button></li>
+        </ul>
+    </nav>
+    <main class="flex flex-col items-center justify-center relative">
+        <section class="hero-container gap-4 h-[90vh] flex flex-col justify-center items-center my-auto">
+            <div class="w-full h-[26vh] bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] rounded-b-[50%] absolute top-0 left-0 -z-10"></div>
+            <div class="hero flex flex-col justify-center items-center gap-2 ">
+                <h1 class="text-4xl text-center font-bold ">Welcome to <span id="element">QuizWhiz</span></h1>
+                <p class="text-center text-orange-400 font-medium">Test your knowledge and compete with. </p>
+                <p class="text-center">Challenge Your Mind, Discover New Horizons, <br> and Have Fun Along the Way!</p>
+            </div>
+            <button class=" start text-white rounded-lg bg-orange-500 px-3 py-2 cursor-pointer hover:bg-orange-400"><a href="./components/test.html">Start Test</a></button>
+        </section>
+
+        <section id="about" class="flex flex-col text-center w-[80vw] justify-center gap-4 h-[40vh]">
+            <h3 class="font-sans font-medium underline decoration-amber-500 text-4xl">ABOUT</h3>
+            <div class="font-mono text-center ">Welcome to QuizWhiz! Our platform is designed to turn learning into an adventure. Whether you're a trivia enthusiast, a student sharpening your knowledge, or just someone looking for some fun challenges, QuizMaster is your go-to destination. We offer a wide range of topics and difficulty levels to cater to every quiz lover. Our mission is to create an engaging and educational experience that makes learning enjoyable. Join our community of quiz-takers and embark on a journey of discovery, one question at a time!</div>
+        </section>
+    </main>
+
+    <footer class="flex justify-center items-center h-10 bg-orange-400 text-white relative bottom-0 w-full">
+        <p>&copy; 2025 QuizWhiz. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['QUIZWHIZ.', 'QUIZMASTER.', 'QUIZGENIUS.'],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
