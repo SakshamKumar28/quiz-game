@@ -1,4 +1,4 @@
-const apiKey = '..'; // Replace with your API key
+const apiKey = `{process.env.API}`; // Replace with your API key
 const apiUrl = `https://quizapi.io/api/v1/questions?apiKey=${apiKey}&limit=10`;
 
 const fetchQuestions = async () => {
